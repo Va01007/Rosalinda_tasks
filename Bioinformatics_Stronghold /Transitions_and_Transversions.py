@@ -6,8 +6,8 @@ def Count_analisis(in_file:str):
     seq_list = []
     for i in SeqIO.parse(in_file, "fasta"):
         seq_list.append(str(i.seq))
-        count_transitions = 0
-        count_transversions = 0
+    count_transitions = 0
+    count_transversions = 0
     for nucl1, nucl2 in zip(seq_list[0], seq_list[1]):
         if nucl1 == nucl2:
             pass
